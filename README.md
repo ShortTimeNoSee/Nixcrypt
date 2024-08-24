@@ -6,14 +6,14 @@ Nixcrypt is a simple and secure text signing tool built with Electron and Python
 If you prefer not to build the application manually, you can download the pre-built installer from the [Releases](https://github.com/ShortTimeNoSee/Nixcrypt/releases).
 
 ## Build the application manually
-## Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have the following installed:
 
 - **Node.js**: [Download and install Node.js](https://nodejs.org/) (which includes npm).
 - **Python (Embeddable Package)**: You need to [download the Python 3.x embeddable package](https://www.python.org/downloads/windows/).
 
-### Python Dependencies
+#### Python Dependencies
 
 This project uses the `cryptography` package for signing messages. Install it using pip:
 
