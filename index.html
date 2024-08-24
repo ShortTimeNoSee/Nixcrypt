@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Signing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Message Signing Tool</h1>
+        <div class="input-container">
+	    <textarea id="private-key" placeholder="Paste your private key here (PEM format)"></textarea>
+            <textarea id="message" placeholder="Paste your message here"></textarea>
+            <button id="sign-button">Sign Message</button>
+            <textarea id="signature" placeholder="Base64 Encoded Signature" readonly></textarea>
+        </div>
+        <div class="footer">
+            <p>Choose Change, Choose Thompson</p>
+            <p>Copyright Nicholas A. Thompson</p>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="alert-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Please enter a message to sign.</p>
+            <button id="modal-ok-button">OK</button>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

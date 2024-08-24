@@ -1,0 +1,39 @@
+{
+  "name": "nixcrypt",
+  "version": "1.0.0",
+  "author": "Nicholas A. Thompson",
+  "description": "Nixcrypt - a text signing tool",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^25.9.8",
+    "electron-builder": "^24.13.3"
+  },
+   "build": {
+     "appId": "com.nixcrypt.app",
+     "productName": "Nixcrypt",
+     "files": [
+       "index.html",
+       "main.js",
+       "renderer.js",
+       "preload.js",
+       "styles.css",
+       "resources/**/*"
+     ],
+     "extraResources": [
+     {
+       "from": "resources/encrypt.exe",
+       "to": "encrypt.exe"
+     }
+   ],
+   "directories": {
+     "output": "dist"
+   },
+   "win": {
+     "icon": "resources/icon.ico"
+     }
+   }
+}
