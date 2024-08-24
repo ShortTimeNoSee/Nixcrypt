@@ -2,6 +2,10 @@
 
 Nixcrypt is a simple and secure text signing tool built with Electron and Python. It allows users to sign messages with their private keys, ensuring message integrity and authenticity.
 
+## Download the installer
+If you prefer not to build the application manually, you can download the pre-built installer from the [Releases](https://github.com/ShortTimeNoSee/Nixcrypt/releases).
+
+## Build the application manually
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
@@ -17,10 +21,6 @@ This project uses the `cryptography` package for signing messages. Install it us
 pip install cryptography
 ```
 
-## Download the installer
-If you prefer not to build the application manually, you can download the pre-built installer from the [Releases](https://github.com/ShortTimeNoSee/Nixcrypt/releases).
-
-## Build the application manually
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/ShortTimeNoSee/Nixcrypt.git
